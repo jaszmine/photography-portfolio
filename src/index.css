@@ -1,6 +1,5 @@
 @import 'tailwindcss';
-@import '@fontsource/gowun-batang/400.css';
-@import '@fontsource/gowun-batang/700.css';
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
 @import '@fontsource/inter/400.css';
 @import '@fontsource/inter/500.css';
 @import '@fontsource/inter/600.css';
