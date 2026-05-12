@@ -20,9 +20,6 @@ importers:
       '@fontsource/playfair-display':
         specifier: ^5.2.8
         version: 5.2.8
-      '@fontsource/shippori-mincho':
-        specifier: ^5.2.8
-        version: 5.2.8
       '@vercel/analytics':
         specifier: ^2.0.1
         version: 2.0.1(react@19.2.6)
@@ -223,9 +220,6 @@ packages:
 
   '@fontsource/playfair-display@5.2.8':
     resolution: {integrity: sha512-fUEhib70SszNhQVsGbUMSsWJhr7Je0rdeuZdtGpDNu0GKF1xJM8QhpI/y0pckU25GcChXm9TLOmeZupkvvZo2g==}
-
-  '@fontsource/shippori-mincho@5.2.8':
-    resolution: {integrity: sha512-GoWDgrzVyB1oUufPKN9suBaM+TpliiBcMwEalqqMeO38xdGJzY/ZwhehZsxyOoR56c1l98vwXbj+tXWHyGefJA==}
 
   '@humanfs/core@0.19.2':
     resolution: {integrity: sha512-UhXNm+CFMWcbChXywFwkmhqjs3PRCmcSa/hfBgLIb7oQ5HNb1wS0icWsGtSAUNgefHeI+eBrA8I1fxmbHsGdvA==}
@@ -1286,8 +1280,6 @@ snapshots:
   '@fontsource/montserrat@5.2.8': {}
 
   '@fontsource/playfair-display@5.2.8': {}
-
-  '@fontsource/shippori-mincho@5.2.8': {}
 
   '@humanfs/core@0.19.2':
     dependencies:
