@@ -1,6 +1,6 @@
 <img src="/public/logo-full.png" alt="Logo" align="right"/>
 
-<br>
+<p>&nbsp;</p>
 
 # Professional Photography Portfolio
 
