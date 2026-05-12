@@ -48,6 +48,7 @@ export default {
       fontFamily: {
         'display': ['"Shippori Mincho"', 'sans-serif'],
         'body': ['"Inter"', 'sans-serif'],
+        'gowun': ['"Gowun Batang"', 'serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-out',
