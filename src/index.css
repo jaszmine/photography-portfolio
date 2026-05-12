@@ -1,0 +1,233 @@
+@import 'tailwindcss';
+@import '@fontsource/shippori-mincho/400.css';
+@import '@fontsource/shippori-mincho/500.css';
+@import '@fontsource/shippori-mincho/600.css';
+@import '@fontsource/shippori-mincho/700.css';
+@import '@fontsource/shippori-mincho/800.css';
+@import '@fontsource/gowun-batang/400.css';
+@import '@fontsource/gowun-batang/700.css';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+
+@theme {
+  --color-beige-light: #f7edd7;
+  --color-beige: #e8dcc8;
+  --color-beige-dark: #d4c5a8;
+  --color-dark-grey: #1A1A1A;
+  --color-dark: #2A2A2A;
+  --color-dark-light: #3A3A3A;
+  /* --color-accent-coral: #FF5A5F;
+  --color-accent-orange: #FF8A3D;
+  --color-accent-yellow: #FFC857;
+  --color-accent-purple: #6A5ACD;
+  --color-accent-violet: #2E1A47; */
+  /* --color-accent-orange: #fb9035;
+  --color-accent-pink: #d34763;
+  --color-accent-purple: #86276e;
+  --color-accent-violet: #521d8f;
+  --color-accent-darkpurple: #291148; */
+  /* --color-accent-red: #df2c06;
+  --color-accent-orange: #fb8738;
+  --color-accent-yellow: #ffb431;
+  --color-accent-green: #4e603a;
+  --color-accent-blue: #296b6a; */
+  --color-accent-yellow: #dfb73f;
+  --color-accent-green: #80934e;
+  --color-accent-turqoise: #86b4ae;
+  --color-accent-blue: #6b99b2;
+}
+ 
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-beige-light);
+  font-family: 'Gowun Batang', sans-serif;
+  font-size: 1.25rem;
+  color: var(--color-dark-grey);
+  overflow-x: hidden;
+}
+
+/* Shippori Mincho */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gowun Batang', serif;
+  font-weight: bold;
+  letter-spacing: -0.025em;
+}
+
+.font-gowun {
+  font-family: 'Gowun Batang', serif;
+}
+
+.container-custom {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-custom {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-custom {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  color: white;
+  background-color: var(--color-dark-grey);
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-dark-light);
+  transform: scale(1.05);
+}
+
+.btn-primary:focus {
+  outline: none;
+  ring: 2px solid var(--color-accent-coral);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-beige-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-dark-grey);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-dark-light);
+}
+
+/* Grain texture */
+.bg-grain-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-slow,
+.animate-drift {
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+
+
+/* Floating blob animations */
+@keyframes floatBlob1 {
+  0%, 100% {
+    transform: translate(-50%, -50%) translate(0px, 0px);
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(60px, -40px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translate(-40px, -80px);
+  }
+  75% {
+    transform: translate(-50%, -50%) translate(-60px, 40px);
+  }
+}
+
+@keyframes floatBlob2 {
+  0%, 100% {
+    transform: translate(-50%, -50%) translate(0px, 0px);
+  }
+  33% {
+    transform: translate(-50%, -50%) translate(-50px, 60px);
+  }
+  66% {
+    transform: translate(-50%, -50%) translate(80px, -30px);
+  }
+}
+
+@keyframes floatBlob3 {
+  0%, 100% {
+    transform: translate(-50%, -50%) translate(0px, 0px);
+  }
+  20% {
+    transform: translate(-50%, -50%) translate(40px, 50px);
+  }
+  40% {
+    transform: translate(-50%, -50%) translate(-70px, 20px);
+  }
+  60% {
+    transform: translate(-50%, -50%) translate(30px, -60px);
+  }
+  80% {
+    transform: translate(-50%, -50%) translate(-40px, -30px);
+  }
+}
+
+@keyframes floatBlob4 {
+  0%, 100% {
+    transform: translate(-50%, -50%) translate(0px, 0px);
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(-80px, -20px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translate(40px, 70px);
+  }
+  75% {
+    transform: translate(-50%, -50%) translate(60px, -50px);
+  }
+}
+
+/* Change 20s for speed (lower = faster, higher = slower) */
+.animate-float-1 {
+  animation: floatBlob1 5s ease-in-out infinite;
+}
+
+.animate-float-2 {
+  animation: floatBlob2 25s ease-in-out infinite;
+}
+
+.animate-float-3 {
+  animation: floatBlob3 22s ease-in-out infinite;
+}
+
+.animate-float-4 {
+  animation: floatBlob4 28s ease-in-out infinite;
+}
