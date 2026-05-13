@@ -32,24 +32,40 @@ const Home = () => {
             transition={{ duration: 0.8 }}
           >
 
-            <div className="container-custom relative z-10 text-center">
+            {/* <div className="container-custom relative z-10 text-center">
                 <div className="flex justify-center h-16 md:h-20 sm: mb-18 md:mb-14 lg:mb-18">
-                    {/* Logo */}
                     <Link to="/" className="group flex items-center gap-3">
-                        {/* Logo Image */}
                         <img 
                         src="/JD-photography_logo.png" 
                         alt="JD Photography Logo" 
-                        className="w-40 h-40 sm:w-25 md:w-40 md:h-40 object-contain"
+                        className="w-40 h-40 sm:w-20 md:w-40 md:h-40 object-contain"
                         />
                         
-                        {/* Logo Text */}
-                        <span className="text-5xl sm:text-5xl md:text-8xl font-display font-bold tracking-tighter text-dark-grey">
+                        <span className="text-xl sm:text-3xl md:text-5xl lg:text-8xl font-display font-bold tracking-tighter text-dark-grey">
                         Photography
                         </span>
                     </Link>
                     <br />
                 </div>
+            </div> */}
+
+            <div className="container-custom relative z-10 text-center">
+              <div className="py-4 sm:py-6 md:py-8">
+                {/* Logo - Stacked on mobile, side by side on tablet+ */}
+                <Link to="/" className="group inline-flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+                  {/* Logo Image */}
+                  <img 
+                    src="/JD-photography_logo.png" 
+                    alt="JD Photography Logo" 
+                    className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-36 lg:h-36 object-contain"
+                  />
+                  
+                  {/* Logo Text */}
+                  <span className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold tracking-tighter text-dark-grey">
+                    Photography
+                  </span>
+                </Link>
+              </div>
             </div>
 
             <h1 className="text-2xl sm:text-4xl md:text-5xl font-display font-gowun font-bold text-dark-grey mb-6 mt-6 tracking-tighter">
