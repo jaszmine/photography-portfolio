@@ -19,7 +19,7 @@ const Home = () => {
         {/* <FloatingBlobs />   */}
 
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh] flex items-center justify-center overflow-hidden">
         
         {/* Animated floating elements */}
         {/* <div className="absolute top-20 left-10 w-72 h-72 bg-accent-yellow/20 rounded-full blur-3xl animate-float" />
@@ -49,23 +49,21 @@ const Home = () => {
                 </div>
             </div> */}
 
-            <div className="container-custom relative z-10 text-center">
-              <div className="pt-4 sm:pt-2 md:pt-4">
-                {/* Logo - Stacked on mobile, side by side on tablet+ */}
-                <Link to="/" className="group inline-flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
-                  {/* Logo Image */}
-                  <img 
-                    src="/JD-photography_logo.png" 
-                    alt="JD Photography Logo" 
-                    className="w-20 h-20 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-40 lg:h-40 object-contain"
-                  />
-                  
-                  {/* Logo Text */}
-                  <span className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-display font-bold tracking-tighter text-dark-grey">
-                    Photography
-                  </span>
-                </Link>
-              </div>
+            <div className="pt-2 sm:pt-0 md:pt-2 -mt-4 sm:mt-0">
+              {/* Logo - Stacked on mobile, side by side on tablet+ */}
+              <Link to="/" className="group inline-flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+                {/* Logo Image */}
+                <img 
+                  src="/JD-photography_logo.png" 
+                  alt="JD Photography Logo" 
+                  className="w-20 h-20 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-40 lg:h-40 object-contain"
+                />
+                
+                {/* Logo Text */}
+                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-display font-bold tracking-tighter text-dark-grey">
+                  Photography
+                </span>
+              </Link>
             </div>
 
             <h1 className="text-2xl sm:text-4xl md:text-5xl font-display font-gowun font-bold text-dark-grey mb-6 mt-6 tracking-tighter">
