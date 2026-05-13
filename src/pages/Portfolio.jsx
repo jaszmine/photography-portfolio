@@ -76,7 +76,7 @@ const Portfolio = () => {
             <p className="text-white/80 text-lg max-w-2xl mx-auto">
               {activeCategory === 'all' 
                 ? 'Exploring the world through my lens - a collection of moments, emotions, and stories'
-                : `A collection of ${currentCategory?.name.toLowerCase()} photography capturing authentic moments`
+                : `A collection of ${currentCategory?.name.toLowerCase()} photography`
               }
             </p>
           </motion.div>
