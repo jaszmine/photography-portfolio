@@ -40,11 +40,11 @@ const Home = () => {
                         <img 
                         src="/JD-photography_logo.png" 
                         alt="JD Photography Logo" 
-                        className="w-40 h-40 md:w-40 md:h-40 object-contain"
+                        className="w-40 h-40 sm:w-25 md:w-40 md:h-40 object-contain"
                         />
                         
                         {/* Logo Text */}
-                        <span className="text-5xl sm:text-7xl md:text-8xl font-display font-bold tracking-tighter text-dark-grey">
+                        <span className="text-5xl sm:text-5xl md:text-8xl font-display font-bold tracking-tighter text-dark-grey">
                         Photography
                         </span>
                     </Link>
