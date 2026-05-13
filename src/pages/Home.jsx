@@ -50,7 +50,7 @@ const Home = () => {
             </div> */}
 
             <div className="container-custom relative z-10 text-center">
-              <div className="pt-4 sm:pt-4 md:pt-8 lg:pt-12">
+              <div className="pt-4 sm:pt-2 md:pt-4">
                 {/* Logo - Stacked on mobile, side by side on tablet+ */}
                 <Link to="/" className="group inline-flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
                   {/* Logo Image */}
